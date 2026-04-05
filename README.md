@@ -112,3 +112,11 @@ The goal is not to fully solve the problem, but to:
 ## 🙌 Note
 
 This project focuses on real-world behavior and practical usability, rather than building a complex system.
+
+---
+
+## 🚀 Future Improvements
+
+- Storing completed tasks history  
+- Adding reminders or notifications  
+- Better visual insights for workload  
