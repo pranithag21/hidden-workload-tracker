@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden Workload Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌸 Hidden Workload Tracker 🌸</h1>
+
+    <p style="color:#555; margin-bottom:20px;">
+        Helps identify hidden workload and manage daily responsibilities
+    </p>
+
+    <div>
+        <input type="text" id="taskInput" placeholder="What do you need to do?">
+        
+        <select id="taskType">
+            <option value="Regular">Regular Tasks</option>
+            <option value="Today">Today's Tasks</option>
+        </select>
+
+        <select id="priority">
+            <option value="High">High Priority 🔴</option>
+            <option value="Medium">Medium Priority 🟡</option>
+            <option value="Low">Low Priority 🟢</option>
+        </select>
+
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <h3>Daily Routine (Regular Tasks)</h3>
+    <ul id="regularList"></ul>
+
+    <h3>Today's Additional Tasks</h3>
+    <ul id="todayList"></ul>
+
+    <p id="totalTasks">Total Tasks: 0</p>
+    <p id="breakdown"></p>
+    <p id="overloadMessage"></p>
+
+    <!-- 🎉 Celebration Popup -->
+    <div id="celebration" class="celebration">
+        <div class="celebration-box">
+            <h2>🎉 Congratulations! 🎉</h2>
+            <p>You completed an important task 💪</p>
+            <button onclick="closeCelebration()">Done</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
